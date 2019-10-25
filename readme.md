@@ -28,5 +28,14 @@ npm start
 
 will serve the API at the default port 3000. Visit ```localhost:3000/search/tetris``` to see a list of tetris related repos.
 
-## Environment variables & config
+# Testing
+Some sample tests for bookmarking are included in tests/tests.js. These use the Mocha and Chai frameworks, and are intended only as a placeholder for better tests. Bookmarking does not require https or cors access to github, but search queries do.
+
+```
+npm run test
+```
+
+will run the example tests.
+
+# Environment variables & config
 ```npm start``` preloads variables from a .env file at the root of the project. Normally, these should not be committed, but in this case they contain no secrets, so I have committed the env file. PORT specifies a port for express to listen on. NODE_ENV currently does nothing.
