@@ -3,7 +3,7 @@
 Returns a list of current bookmarks
 
 ## /bookmarks/add/:id
-Appends an id to the list of bookmarks and returns all bookmarks
+Appends an id to the list of bookmarks and returns all bookmarks. Ids are not validated against the github API, all ids are accepted.
 
 ## /bookmarks/delete/:id
 Deletes an id if it exists and returns all bookmarks
