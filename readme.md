@@ -12,10 +12,13 @@ Deletes an id if it exists and returns all bookmarks
 Returns a JSON object with repo id:url matching search query
 
 # To install and run
+From terminal, assuming git is installed:
+
 ```
-Git clone https://github.com/benolayinka/conrad-github.git
+git clone https://github.com/benolayinka/conrad-github.git
 ```
-will clone in to conrad-github
+
+will clone in to directory conrad-github, creating the directory if it does not exist.
 
 ```
 cd conrad-github
@@ -23,7 +26,7 @@ npm install
 npm start
 ```
 
-Will serve the API at the default port 3000. Visit ```localhost:3000/search/tetris``` to see a list of tetris related repos.
+will serve the API at the default port 3000. Visit ```localhost:3000/search/tetris``` to see a list of tetris related repos.
 
 ## Environment variables & config
 ```npm start``` preloads variables from a .env file at the root of the project. Normally, these should not be committed, but in this case they contain no secrets, so I have committed the env file. PORT specifies a port for express to listen on. NODE_ENV currently does nothing.
